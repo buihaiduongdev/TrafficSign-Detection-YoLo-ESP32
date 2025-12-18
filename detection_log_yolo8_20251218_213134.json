@@ -1,0 +1,274 @@
+[
+  {
+    "timestamp": "2025-12-18T21:31:09.624058",
+    "frame": 3,
+    "class_name": "P-127",
+    "confidence": 0.9006255865097046,
+    "distance": 12.307692307692308,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:09.662053",
+    "frame": 4,
+    "class_name": "P-127",
+    "confidence": 0.9006255865097046,
+    "distance": 12.307692307692308,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:09.693055",
+    "frame": 5,
+    "class_name": "P-127",
+    "confidence": 0.9006255865097046,
+    "distance": 12.307692307692308,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:09.850055",
+    "frame": 6,
+    "class_name": "W-245a",
+    "confidence": 0.6096270680427551,
+    "distance": 25.263157894736842,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:09.880054",
+    "frame": 7,
+    "class_name": "W-245a",
+    "confidence": 0.6096270680427551,
+    "distance": 25.263157894736842,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:09.912060",
+    "frame": 8,
+    "class_name": "W-245a",
+    "confidence": 0.6096270680427551,
+    "distance": 25.263157894736842,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:12.747002",
+    "frame": 45,
+    "class_name": "P-127",
+    "confidence": 0.9392135143280029,
+    "distance": 11.851851851851851,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:12.774005",
+    "frame": 46,
+    "class_name": "P-127",
+    "confidence": 0.9392135143280029,
+    "distance": 11.851851851851851,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:12.806002",
+    "frame": 47,
+    "class_name": "P-127",
+    "confidence": 0.9392135143280029,
+    "distance": 11.851851851851851,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:15.832447",
+    "frame": 87,
+    "class_name": "P-127",
+    "confidence": 0.8653820157051086,
+    "distance": 12.467532467532468,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:15.832447",
+    "frame": 87,
+    "class_name": "W-245a",
+    "confidence": 0.7181558609008789,
+    "distance": 28.235294117647058,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:15.863477",
+    "frame": 88,
+    "class_name": "P-127",
+    "confidence": 0.8653820157051086,
+    "distance": 12.467532467532468,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:15.863477",
+    "frame": 88,
+    "class_name": "W-245a",
+    "confidence": 0.7181558609008789,
+    "distance": 28.235294117647058,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:15.895480",
+    "frame": 89,
+    "class_name": "P-127",
+    "confidence": 0.8653820157051086,
+    "distance": 12.467532467532468,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:15.895480",
+    "frame": 89,
+    "class_name": "W-245a",
+    "confidence": 0.7181558609008789,
+    "distance": 28.235294117647058,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:18.950541",
+    "frame": 129,
+    "class_name": "P-127",
+    "confidence": 0.9198610186576843,
+    "distance": 12.151898734177216,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:18.950541",
+    "frame": 129,
+    "class_name": "W-245a",
+    "confidence": 0.5833439826965332,
+    "distance": 26.666666666666668,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:18.991538",
+    "frame": 130,
+    "class_name": "P-127",
+    "confidence": 0.9198610186576843,
+    "distance": 12.151898734177216,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:18.991538",
+    "frame": 130,
+    "class_name": "W-245a",
+    "confidence": 0.5833439826965332,
+    "distance": 26.666666666666668,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:19.023540",
+    "frame": 131,
+    "class_name": "P-127",
+    "confidence": 0.9198610186576843,
+    "distance": 12.151898734177216,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:19.023540",
+    "frame": 131,
+    "class_name": "W-245a",
+    "confidence": 0.5833439826965332,
+    "distance": 26.666666666666668,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:22.024524",
+    "frame": 168,
+    "class_name": "P-127",
+    "confidence": 0.9525892734527588,
+    "distance": 8.571428571428571,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:22.035530",
+    "frame": 169,
+    "class_name": "P-127",
+    "confidence": 0.9525892734527588,
+    "distance": 8.571428571428571,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:22.072524",
+    "frame": 170,
+    "class_name": "P-127",
+    "confidence": 0.9525892734527588,
+    "distance": 8.571428571428571,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:25.175588",
+    "frame": 207,
+    "class_name": "P-127",
+    "confidence": 0.981981098651886,
+    "distance": 8.421052631578947,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:25.217585",
+    "frame": 208,
+    "class_name": "P-127",
+    "confidence": 0.981981098651886,
+    "distance": 8.421052631578947,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:25.250324",
+    "frame": 209,
+    "class_name": "P-127",
+    "confidence": 0.981981098651886,
+    "distance": 8.421052631578947,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:28.273045",
+    "frame": 246,
+    "class_name": "P-127",
+    "confidence": 0.9714842438697815,
+    "distance": 8.571428571428571,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:28.285046",
+    "frame": 247,
+    "class_name": "P-127",
+    "confidence": 0.9714842438697815,
+    "distance": 8.571428571428571,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:28.319047",
+    "frame": 248,
+    "class_name": "P-127",
+    "confidence": 0.9714842438697815,
+    "distance": 8.571428571428571,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:31.367251",
+    "frame": 285,
+    "class_name": "P-127",
+    "confidence": 0.9740849137306213,
+    "distance": 8.727272727272727,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:31.379251",
+    "frame": 286,
+    "class_name": "P-127",
+    "confidence": 0.9740849137306213,
+    "distance": 8.727272727272727,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:31.416250",
+    "frame": 287,
+    "class_name": "P-127",
+    "confidence": 0.9740849137306213,
+    "distance": 8.727272727272727,
+    "alert_level": " WARNING"
+  },
+  {
+    "timestamp": "2025-12-18T21:31:34.524320",
+    "frame": 324,
+    "class_name": "P-127",
+    "confidence": 0.9652222990989685,
+    "distance": 8.571428571428571,
+    "alert_level": " WARNING"
+  }
+]
