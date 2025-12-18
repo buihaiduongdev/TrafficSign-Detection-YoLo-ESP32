@@ -1,4 +1,5 @@
 import sys
+import os
 import cv2
 import numpy as np
 from pathlib import Path
@@ -918,15 +919,31 @@ class TrafficSignDetectorApp(QMainWindow):
         self.statusBar().showMessage("Stopped")
         self.save_logs()
     
+    
     def save_logs(self):
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
+        log_dir = "detec_log"
+        os.makedirs(log_dir, exist_ok=True)
+
+        # ===== YOLOv8 =====
         if self.detection_log_yolo8:
-            log_file = f"detection_log_yolo8_{timestamp}.json"
-            with open(log_file, 'w') as f: json.dump(self.detection_log_yolo8, f, indent=2)
+            log_file = os.path.join(
+                log_dir, f"detection_log_yolo8_{timestamp}.json"
+            )
+            with open(log_file, 'w', encoding='utf-8') as f:
+                json.dump(self.detection_log_yolo8, f, indent=2, ensure_ascii=False)
+
+        # ===== YOLOv11 =====
         if self.detection_log_yolo11:
-            log_file = f"detection_log_yolo11_{timestamp}.json"
-            with open(log_file, 'w') as f: json.dump(self.detection_log_yolo11, f, indent=2)
-    
+            log_file = os.path.join(
+                log_dir, f"detection_log_yolo11_{timestamp}.json"
+            )
+            with open(log_file, 'w', encoding='utf-8') as f:
+                json.dump(self.detection_log_yolo11, f, indent=2, ensure_ascii=False)
+
+        print(f"[LOG] Detection logs saved to '{log_dir}/'")
+
     def show_error(self, message):
         self.statusBar().showMessage(f"{message}")
         QMessageBox.warning(self, "Error", message)
