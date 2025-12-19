@@ -326,7 +326,7 @@ class TrafficSignDetectorApp(QMainWindow):
         settings_layout.addWidget(self.cam_ip_input)
         
         settings_layout.addWidget(QLabel("ESP8266 Audio IP Address:"))
-        self.audio_ip_input = QLineEdit("10.34.117.147") 
+        self.audio_ip_input = QLineEdit("10.225.3.104") 
         settings_layout.addWidget(self.audio_ip_input)
 
         # Confidence

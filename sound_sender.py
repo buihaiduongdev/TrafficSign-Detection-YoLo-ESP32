@@ -77,13 +77,20 @@ class SoundSender:
         print(f"SoundSender initialized. Target: {self.ip}:{self.port}")
 
     def play_sound(self, class_name):
-        # Tìm ID bài hát tương ứng
+        now = time.time()
+        if not hasattr(self, "last_play_time"):
+            self.last_play_time = 0
+
+        if now - self.last_play_time < 3:
+            return
+
         track_id = self.mapping.get(class_name, 0)
-        
+
         if track_id > 0:
             try:
                 message = str(track_id).encode('utf-8')
                 self.sock.sendto(message, (self.ip, self.port))
+                self.last_play_time = now
                 print(f"Sent UDP command: Play track {track_id} ({class_name})")
             except Exception as e:
                 print(f"UDP Error: {e}")
