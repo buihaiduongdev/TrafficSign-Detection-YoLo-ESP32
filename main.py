@@ -26,62 +26,62 @@ reader = easyocr.Reader(['en'], gpu=False)
 
 # Vietnamese sign name mapping
 VIETNAMESE_SIGN_NAMES = {
-    'DP-135': 'Đường ưu tiên',
-    'P-102': 'Cấm đi ngược chiều',
-    'P-103a': 'Cấm dừng xe',
-    'P-103b': 'Cấm dừng xe',
-    'P-103c': 'Cấm dừng xe',
-    'P-104': 'Cấm đỗ xe',
-    'P-106a': 'Cấm vượt',
-    'P-106b': 'Cấm vượt',
-    'P-107a': 'Cấm vượt xe tải',
-    'P-112': 'Cấm rẽ trái',
-    'P-115': 'Cấm rẽ phải',
-    'P-117': 'Cấm quay đầu',
-    'P-123a': 'Cấm đi vào',
-    'P-123b': 'Cấm đi vào',
-    'P-124a': 'Cấm ô tô đi vào',
-    'P-124b': 'Cấm ô tô đi vào',
-    'P-124c': 'Cấm ô tô đi vào',
-    'P-127': 'Giới hạn tốc độ 50',
-    'P-128': 'Giới hạn tốc độ 60',
-    'P-130': 'Cấm dừng và đỗ xe',
-    'P-131a': 'Cấm dừng và đỗ xe',
-    'P-137': 'Hết hạn chế',
-    'P-245a': 'Cấm đỗ xe hai phía',
-    'R-301c': 'Đi thẳng và rẽ phải',
-    'R-301d': 'Đi thẳng và rẽ trái',
-    'R-301e': 'Rẽ phải',
-    'R-302a': 'Rẽ phải hoặc đi thẳng',
-    'R-302b': 'Rẽ trái hoặc đi thẳng',
-    'R-303': 'Đi thẳng',
-    'R-407a': 'Hướng đi thẳng phải theo',
-    'R-409': 'Hướng đi thẳng',
-    'R-425': 'Hướng rẽ phải',
-    'R-434': 'Hướng rẽ trái',
-    'S-509a': 'Đường cấm xe tải',
-    'W-201a': 'Đường cong vòng trái',
-    'W-201b': 'Đường cong vòng phải',
-    'W-202a': 'Đường cong vòng trái',
-    'W-202b': 'Đường cong vòng phải',
-    'W-203b': 'Đường giao nhau',
-    'W-203c': 'Đường giao nhau',
-    'W-205a': 'Giao nhau với đường ưu tiên',
-    'W-205b': 'Giao nhau với đường ưu tiên',
-    'W-205d': 'Giao nhau với đường ưu tiên',
+    'DP-135': 'Hết tất cả các lệnh cấm',
+    'P-102':  'Cấm đi ngược chiều',
+    'P-103a': 'Cấm xe ô tô',
+    'P-103b': 'Cấm xe ô tô rẽ phải',
+    'P-103c': 'Cấm xe ô tô rẽ trái',
+    'P-104':  'Cấm xe máy',
+    'P-106a': 'Cấm xe ô tô tải',
+    'P-106b': 'Cấm xe ô tô tải (theo khối lượng)',
+    'P-107a': 'Cấm xe khách và xe tải',
+    'P-112':  'Cấm người đi bộ',
+    'P-115':  'Hạn chế tải trọng toàn bộ xe',
+    'P-117':  'Hạn chế chiều cao',
+    'P-123a': 'Cấm rẽ trái',
+    'P-123b': 'Cấm rẽ phải',
+    'P-124a': 'Cấm quay đầu xe',
+    'P-124b': 'Cấm ô tô quay đầu xe',
+    'P-124c': 'Cấm rẽ trái và quay đầu xe',
+    'P-127':  'Tốc độ tối đa cho phép (50km/h)',
+    'P-128':  'Tốc độ tối đa cho phép (60km/h)',
+    'P-130':  'Cấm dừng xe và đỗ xe',
+    'P-131a': 'Cấm đỗ xe',
+    'P-137':  'Cấm rẽ trái và rẽ phải',
+    'P-245a': 'Đi chậm',
+    'R-301c': 'Các xe chỉ được rẽ trái',
+    'R-301d': 'Các xe chỉ được rẽ phải',
+    'R-301e': 'Các xe chỉ được rẽ trái (trước ngã 3,4)',
+    'R-302a': 'Hướng phải đi vòng chướng ngại vật (sang phải)',
+    'R-302b': 'Hướng phải đi vòng chướng ngại vật (sang trái)',
+    'R-303':  'Nơi giao nhau chạy theo vòng xuyến',
+    'R-407a': 'Đường một chiều',
+    'R-409':  'Chỗ quay xe',
+    'R-425':  'Cầu vượt qua đường cho người đi bộ',
+    'R-434':  'Bến xe buýt',
+    'S-509a': 'Biển phụ: Thuyết minh biển chính',
+    'W-201a': 'Chỗ ngoặt nguy hiểm vòng bên trái',
+    'W-201b': 'Chỗ ngoặt nguy hiểm vòng bên phải',
+    'W-202a': 'Nhiều chỗ ngoặt nguy hiểm (vòng trái)',
+    'W-202b': 'Nhiều chỗ ngoặt nguy hiểm (vòng phải)',
+    'W-203b': 'Đường bị thu hẹp về phía trái',
+    'W-203c': 'Đường bị thu hẹp về phía phải',
+    'W-205a': 'Đường giao nhau cùng cấp (ngã tư)',
+    'W-205b': 'Đường giao nhau cùng cấp (ngã ba)',
+    'W-205d': 'Đường giao nhau cùng cấp (ngã ba)',
     'W-207a': 'Giao nhau với đường không ưu tiên',
-    'W-207b': 'Giao nhau với đường không ưu tiên',
-    'W-207c': 'Giao nhau với đường không ưu tiên',
-    'W-208': 'Giao nhau với đường sắt',
-    'W-209': 'Giao nhau với đường sắt',
-    'W-210': 'Giao nhau với đường sắt',
-    'W-219': 'Chú ý dốc xuống',
-    'W-224': 'Chú ý đường trơn',
-    'W-225': 'Chú ý: Trẻ em',
-    'W-227': 'Chú ý đường hẹp',
-    'W-233': 'Chú ý chướng ngại vật',
-    'W-235': 'Chú ý chướng ngại vật',
-    'W-245a': 'Chú ý công trường'
+    'W-207b': 'Giao nhau với đường không ưu tiên (bên phải)',
+    'W-207c': 'Giao nhau với đường không ưu tiên (bên trái)',
+    'W-208':  'Giao nhau với đường ưu tiên (nhường đường)',
+    'W-209':  'Giao nhau có tín hiệu đèn',
+    'W-210':  'Giao nhau với đường sắt có rào chắn',
+    'W-219':  'Dốc xuống nguy hiểm',
+    'W-224':  'Đường người đi bộ cắt ngang',
+    'W-225':  'Chú ý trẻ em',
+    'W-227':  'Công trường',
+    'W-233':  'Nguy hiểm khác',
+    'W-235':  'Chú ý người qua đường',
+    'W-245a': 'Đi chậm'
 }
 
 def get_vietnamese_sign_name(class_name):
@@ -322,7 +322,7 @@ class TrafficSignDetectorApp(QMainWindow):
         settings_layout.addWidget(ip_label)
         
         settings_layout.addWidget(QLabel("ESP32-CAM IP Address:"))
-        self.cam_ip_input = QLineEdit("10.34.117.102") 
+        self.cam_ip_input = QLineEdit("10.225.3.181") 
         settings_layout.addWidget(self.cam_ip_input)
         
         settings_layout.addWidget(QLabel("ESP8266 Audio IP Address:"))
@@ -461,12 +461,19 @@ class TrafficSignDetectorApp(QMainWindow):
     # --- CÁC HÀM MỞ SOURCE ---
     def open_camera(self):
         self.stop_detection()
-        self.sound_sender = None
+
+        cam_ip = self.cam_ip_input.text().strip()
+        audio_ip = self.audio_ip_input.text().strip()
         self.cap = cv2.VideoCapture(0)
         if not self.cap.isOpened():
             self.show_error("Cannot open camera")
             return
+        print(f"Connecting Audio to {audio_ip}...")
+        self.sound_sender = SoundSender(audio_ip)
         
+        stream_url = f"http://{cam_ip}:81/stream"
+        print(f"Connecting Video to {stream_url}...")
+
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
         self.timer.start(30)
@@ -498,13 +505,16 @@ class TrafficSignDetectorApp(QMainWindow):
             
         if self.cap.isOpened():
             self.timer.start(30)
-            self.statusBar().showMessage(f"📡 LIVE: Connected to {cam_ip}")
+            self.statusBar().showMessage(f"LIVE: Connected to {cam_ip}")
             QMessageBox.information(self, "Success", f"Connected to ESP32-CAM!\nAudio target: {audio_ip}")
         else:
             self.show_error(f"Cannot connect to ESP32 stream at {cam_ip}")
     
     def open_video(self):
         self.stop_detection()
+        cam_ip = self.cam_ip_input.text().strip()
+        audio_ip = self.audio_ip_input.text().strip()
+
         self.sound_sender = None
         file_path, _ = QFileDialog.getOpenFileName(
             self, "Select Video File", "",
@@ -515,8 +525,15 @@ class TrafficSignDetectorApp(QMainWindow):
         if not self.cap.isOpened():
             self.show_error("Cannot open video")
             return
+        
+        print(f"Connecting Audio to {audio_ip}...")
+        self.sound_sender = SoundSender(audio_ip)
+        
+        stream_url = f"http://{cam_ip}:81/stream"
+        print(f"Connecting Video to {stream_url}...")
+
         self.timer.start(30)
-        self.statusBar().showMessage(f"📹 Playing: {Path(file_path).name}")
+        self.statusBar().showMessage(f"Playing: {Path(file_path).name}")
     
     def open_image(self):
         self.stop_detection()
